@@ -273,5 +273,6 @@ class ModulesTest extends TestCase {
 		// Subsequent calls to deactivate an inactive module do not call the on_deactivation method
 		$this->assertTrue( $modules->deactivate_module( 'fake-module' ) );
 		$this->assertEquals( 1, $deactivation_invocations );
+		// test commit
 	}
 }
